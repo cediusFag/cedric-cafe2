@@ -1,0 +1,18 @@
+/* @import '../../node_modules/locomotive-scroll/dist/locomotive-scroll.css'; */
+@import "tailwindcss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* html, body {
+  height: 100%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  scroll-snap-type: y mandatory;
+} */
