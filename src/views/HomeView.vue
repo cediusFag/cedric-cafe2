@@ -19,10 +19,34 @@
 
 <template>
     <div id="scroll-container">
-        <div v-for="(section, index) in sections" :key="index" class="section"
+        <section v-for="(section, index) in sections" :key="index" class="section"
             :style="{ backgroundColor: section.color }">
-            {{ section.title }}
-        </div>
+            <picture>
+      <!-- Vidéo -->
+      <video
+        autoplay
+        loop
+        muted
+        playsinline
+        class="absolute top-0 left-0 w-full h-full object-cover"
+        :poster="'/images/ton-image-de-fallback.jpg'"
+      >
+        <source src="/Madame Zouzoua VS Ministre des Économie et des Finances.mp4" type="video/mp4" />
+        <!-- Option pour d'autres formats vidéo -->
+        <!-- <source src="/videos/ton-fichier-video.webm" type="video/webm" /> -->
+        <!-- Si la vidéo ne se charge pas, on affiche l'image -->
+        <img src="/169788.jpg" alt="Fallback Image" />
+      </video>
+    </picture>
+
+    <!-- Contenu au-dessus de la vidéo -->
+    <div class="relative z-10 flex flex-col items-center justify-center h-full text-white text-center">
+      <h2 class="mt-4 text-lg">{{ section.title }}</h2>
+    </div>
+
+    <!-- Optionnel: Overlay sombre -->
+    <div class="absolute top-0 left-0 w-full h-full bg-black/50 z-0"></div>
+    </section>
     </div>
 </template>
 

@@ -4,7 +4,7 @@
 
 <template>
     <div class="container mx-auto text-center">
-        <p>&copy; 2025 Ton entreprise. Tous droits réservés.</p>
+        <p>&copy; 2025 Cedric's. Tous droits réservés.</p>
     </div>
 </template>
 
