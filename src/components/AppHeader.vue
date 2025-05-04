@@ -23,15 +23,15 @@ const handleOutsideClick = (event) => {
 
 <template>
     <div > <!-- @click="handleOutsideClick" -->
-        <div class="container h-[10vh] mx-auto flex items-center justify-between px-4 fixed top-0 left-0 z-1">
+        <div class="w-full xl-backdrop-blur px-4 border border-solid-black h-[10vh] flex items-center justify-between fixed top-0 left-0 z-1">
             
-            <div class="text-white font-bold text-xl">
+            <div class="text-red-800 font-bold text-xl">
                 <span>Logo</span>
                 <!-- <img src="/images/logo.png" alt="Logo" class="h-8" /> -->
             </div>
 
             <div>
-                <button @click="toggleMenu" class="text-black focus:outline-none" aria-label="Menu">
+                <button @click="toggleMenu" class="text-red-800 focus:outline-none" aria-label="Menu">
                     <span>menu</span>
                 </button>
             </div>

@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <div class="container mx-auto text-center">
+    <div class="relative bottom-0 mx-auto text-center">
         <p>&copy; 2025 Cedric's. Tous droits réservés.</p>
     </div>
 </template>

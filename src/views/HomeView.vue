@@ -51,12 +51,12 @@
 </template>
 
 <style scoped>
-#scroll-container {
+/* #scroll-container {
   height: 100%;
   scroll-behavior: smooth;
   overflow-x: hidden;
   scroll-snap-type: y mandatory;
-}
+} */
 
 .section {
     height: 100vh;
